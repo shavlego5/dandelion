@@ -1,0 +1,95 @@
+#menu {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../images/old-paper.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        position: sticky;
+        left: 0;
+        top: 0;
+        transition: 0.5s;
+
+        &:hover {
+            filter: invert(10);
+            transform: scale(1.1) translate(15px);
+            transition: 0.5s;
+        }
+    }
+
+    .menu-title {
+        width: 100%;
+        margin-bottom: 100px;
+        margin-top: 100px;
+        position: relative;
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            width: 300px;
+            position: absolute;
+            left: calc(50% - 150px);
+            top: -90px;
+
+            &:hover {
+                filter: invert(10);
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .menu-ithems {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+
+        div {
+            p {
+                font-size: 25px;
+                font-weight: bolder;
+                text-align: center;
+                color: white;
+            }
+        }
+
+        .dashed {
+            border: 3px dashed white;
+            width: 70%;
+            height:2px;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: bolder;
+            color: white;
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 824px) {
+  #menu {
+      img {
+          &:first-child {
+            max-width: 150px;
+          }
+      }
+
+      .menu-ithems {
+          .dashed {
+              width: 40%;
+          }
+      }
+  }
+}

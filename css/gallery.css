@@ -1,0 +1,159 @@
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  background-color: #cacfd2;
+}
+
+.gallery .gallery-container {
+  width: auto;
+  background: url(../images/min.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+  width: 360px;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.gallery .gallery-container:hover {
+  -webkit-box-shadow: 0px 0px 0px 10px #ffffff;
+          box-shadow: 0px 0px 0px 10px #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.gallery .gallery-container:hover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.gallery .gallery-container img {
+  width: 300px;
+  height: 200px;
+  border: 15px solid white;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#full-gallery {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  opacity: 0;
+  pointer-events: none;
+  background: url(../images/min.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery .full-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery #pre {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 20px;
+  top: calc(50% - 16px);
+  opacity: 1;
+  z-index: 10;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery #pre:hover {
+  -webkit-transform: scale(1.2) rotate(-180deg);
+          transform: scale(1.2) rotate(-180deg);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery #next {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 16px);
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery #next:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery #close-full {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#full-gallery #close-full:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,134 @@
+#menu-button {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+#menu-button img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-button img:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-button img:nth-child(3) {
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-button img:hover:nth-child(2) {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-button img:hover:nth-child(3) {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-container {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1999;
+  opacity: 0;
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menu-container a {
+  color: white;
+  text-decoration: none;
+  font-family: logo, Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 5vw;
+  line-height: 5vw;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menu-container a span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menu-container a span:last-child {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+#menu-container a:hover span {
+  margin-top: -5vw;
+}
+
+#menu-container a:hover span:last-child {
+  margin-top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menu-container a:nth-child(odd) {
+  margin-left: -150%;
+}
+
+#menu-container a:nth-child(even) {
+  margin-right: -150%;
+}
+
+@media only screen and (max-width: 824px) {
+  #menu-button {
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2000;
+  }
+}
+/*# sourceMappingURL=cafe-menu.css.map */
